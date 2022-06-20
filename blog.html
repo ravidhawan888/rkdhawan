@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>blog</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(17, 17, 15);
+      }
+      .blogs {
+        background-color: aqua;
+        color: black;
+        font-weight: 100;
+        margin: 8px 5px;
+        padding: 0 18px;
+      }
+      #more, #more2 {display: none;}
+      #myBtn,  #myBtn2{
+        margin: 4px; ;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h2 style="text-align: center; color: white">Welcome To My Blog</h2>
+    </header>
+    <main class="container">
+      <div class="blogs">
+        <h2>U-blox Launches The World's Smallest GPS Module</h2>
+        <p>
+          The MIA-M10 from U-blox is the world's smallest GPS module which can
+          be employed as a dependable, long-lasting solution for asset tracking.
+          The MIA-M10 is an ultra-low-power Global Navigation Satellite System
+          (GNSS) module, offering a power-efficient solution for<span id="dots"
+            >...</span> <span id="more">
+
+              size-constrained battery-powered asset tracking devices. The module is
+              capable of receiving four GNSS constellations for maximum coverage.
+           
+                According to the company, the module measures just 4.5 x 4.5 mm, which
+                is roughly half the size of most of its competitors. The miniature
+                form of this module allows developers to implement it in
+                space-constrained applications, thus, further driving the adoption of
+                positioning technology in consumer and industrial solutions. The
+                module offers a power saver mode which can double the battery life by
+                optimally balancing position accuracy and power consumption, thus,
+                allowing the designers to make the system more smaller and lighter by
+                employing a smaller energy storage system.
+            </span>
+            </p>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
+      </div>
+      <div class="blogs">
+        <h2>
+          Google Workspace vs. Microsoft 365: Which has better management tools?
+        </h2>
+        <p>
+          When you choose a productivity platform like Microsoft 365/Office 365
+          or Google Workspace (formerly G Suite), the main focus is on the
+          platform’s functionality:<span id="dots2"
+          >...</span> <span id="more2"> Does it do the job you need? That's of
+          course critical, but once you choose a platform, you have to manage
+          it. That’s why management capabilities should be part of your
+          evaluation of a productivity and collaboration platform, not only its
+          user-facing functionality. <br />
+          As Google’s and Microsoft’s products have matured, so have their
+          administrative capabilities — and the way those functions are exposed
+          to the admin. Let’s take a look at several facets of each office suite
+            </span>
+            from the admin experience perspective.
+        </p>
+        <button onclick="myFunction2()" id="myBtn2">Read more</button>
+
+      </div>
+      <div  style="color:red; background-color: white;" class="blogs">
+        <p >More blogs are coming soon ....! just wait.</p>
+      </div>
+     
+    </main>
+    <script>
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+      function myFunction2() {
+        var dots = document.getElementById("dots2");
+        var moreText = document.getElementById("more2");
+        var btnText = document.getElementById("myBtn2");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+    </script>
+  </body>
+</html>
